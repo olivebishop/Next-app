@@ -18,30 +18,26 @@ const Navbar = () => {
             </div>
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
-                <a
-                  href="/"
-                  className="text-gray-300 hover:bg-purple-500 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                >
-                  Home
-                </a>
-                <a
-                  href="/about"
-                  className="text-gray-300 hover:bg-purple-500 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                >
-                  About
-                </a>
-                <a
-                  href="/services"
-                  className="text-gray-300 hover:bg-purple-500 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                >
-                  Services
-                </a>
-                <a
-                  href="contact"
-                  className="text-gray-300 hover:bg-purple-500 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                >
-                  Contact
-                </a>
+                  <Link href="/">
+                    <span className="text-gray-300 hover:bg-purple-500 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                        Home
+                          </span>
+                              </Link>
+                  <Link href="/about">
+                    <span className="text-gray-300 hover:bg-purple-500 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                        About
+                          </span>
+                              </Link>
+                  <Link href="/services">
+                    <span className="text-gray-300 hover:bg-purple-500 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                        Services
+                          </span>
+                              </Link>
+                  <Link href="/contact">
+                    <span className="text-gray-300 hover:bg-purple-500 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                        Contact
+                          </span>
+                              </Link>
               </div>
             </div>
           </div>
